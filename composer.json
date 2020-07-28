@@ -1,0 +1,25 @@
+{
+    "name": "esign/laravel-sqlite-disable-drop-foreign",
+    "description": "Prevents dropForeign method from being called on sqlite databases",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jordy Van der Haegen",
+            "email": "jordy@esign.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Esign\\SQLiteDisableDropForeign\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Esign\\SQLiteDisableDropForeign\\SQLiteDisableDropForeignServiceProvider"
+            ]
+        }
+    }
+}
